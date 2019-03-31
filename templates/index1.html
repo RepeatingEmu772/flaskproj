@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>itsMANAN</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body bgcolor="black">
+	<font size="6" color="yellow" face="verdana">
+	<h2>{{name}}</h1>
+	<h2>{{now}}</h2>
+	</font>
+	<font size="5">	
+	<a href="">Click here to see something rediculasly awesome</a>
+	</font>
+	<img src="static/images/lgbwiro29px11.png" height="360" width="640">
+	<font color="blue" size="7">
+	<ul>
+		{%for color in colors%}
+		<li>{{color}}</li>
+		{%endfor%}
+	</ul>
+	</font>
+
+	<font color="red" face="Courier New", size="12">
+	<table border="3">
+		<tbody>
+			{%for row in data%}
+			<tr>
+			{%for col in row%}
+				<td>{{col}}</td>
+			{%endfor%}
+			</tr>
+			{%endfor%}
+		</tbody>
+	</table>
+	</font>
+	
+
+</body>
+</html>
